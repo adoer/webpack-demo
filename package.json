@@ -4,6 +4,9 @@
   "description": "webpack-demo",
   "main": "index.js",
   "scripts": {
+    "build": "webpack",
+    "dev": "webpack-dev-server --devtool eval --progress --colors",
+    "deploy": "NODE_ENV=production webpack -p",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -17,8 +20,18 @@
   },
   "homepage": "https://github.com/adoer/webpack-demo#readme",
   "devDependencies": {
+    "css-loader": "^0.28.5",
+    "file-loader": "^0.11.2",
+    "html-webpack-plugin": "^2.30.1",
+    "open-browser-webpack-plugin": "^0.0.5",
+    "style-loader": "^0.18.2",
+    "url-loader": "^0.5.9",
     "webpack": "^3.5.5",
     "webpack-dev-server": "^2.7.1"
+  },
+  "dependencies": {
+    "jQuery": "^1.7.4",
+    "vue": "^2.4.2",
+    "vue-router": "^2.7.0"
   }
 }
-
